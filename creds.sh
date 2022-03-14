@@ -27,6 +27,11 @@ echo "your_user_agent = \"onlypost by u/$username_var\"" >> ~/Desktop/Onlypost/c
 echo "your_redirect_uri = \"http://localhost:8080\"" >> ~/Desktop/Onlypost/creds.py
 echo "your_client_secret = \"$clientSecret_var\"" >> ~/Desktop/Onlypost/creds.py
 echo "your_refresh_token = \"$refreshToken_var\"" >> ~/Desktop/Onlypost/creds.py
-
+echo "  "
 echo "[Process Complete!]"
-echo "Please close the terminal window"
+echo "  "
+echo "  "
+echo "Your Reddit Username on file is: $username_var"
+echo "Your Reddit Password on file is: $password_var"
+echo "If your login credentials above are accurate then close this window."
+echo "If your login credentials above are not accurate then please close this window and repeat steps one and two from the Creds section."
