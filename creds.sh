@@ -7,11 +7,11 @@ mkdir -p ~/Desktop/Onlypost
 rm -f ~/Desktop/Onlypost/creds.py
 
 #prompt user for input
-vared -p "Enter your username: " -c username_var
-vared -p "Enter your password: " -c password_var
-vared -p "Enter your client_id: " -c clientID_var
-vared -p "Enter your client_secret: " -c clientSecret_var
-vared -p "Enter your refresh token: " -c refreshToken_var
+vared -p "Enter your Reddit username: " -c username_var
+vared -p "Enter your Reddit password: " -c password_var
+vared -p "Enter your Reddit client_id: " -c clientID_var
+vared -p "Enter your Reddit client_secret: " -c clientSecret_var
+vared -p "Enter your Reddit refresh token: " -c refreshToken_var
 
 # trim whitespace and create creds.py file with all of the necessary variables
 username_var=`echo $username_var | tr -d '[:space:]'`
@@ -27,3 +27,6 @@ echo "your_user_agent = \"onlypost by u/$username_var\"" >> ~/Desktop/Onlypost/c
 echo "your_redirect_uri = \"http://localhost:8080\"" >> ~/Desktop/Onlypost/creds.py
 echo "your_client_secret = \"$clientSecret_var\"" >> ~/Desktop/Onlypost/creds.py
 echo "your_refresh_token = \"$refreshToken_var\"" >> ~/Desktop/Onlypost/creds.py
+
+echo "[Process Complete!]"
+echo "Please close the terminal window"
